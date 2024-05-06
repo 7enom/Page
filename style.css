@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Amiri", serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background: url('/Background/photo_2024-05-04_20-43-08.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #1765a8cc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+button {
+    padding: 5px;
+    background-color: #d3603dcc;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.object p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.object{
+    counter-increment: add-num;
+    position: relative;
+}
+
+.object span {
+    color: white;
+    position: absolute;
+    left: 20px;
+    background: #d3603dcc;
+    width: 110px;
+    border-radius: 20px;
+}
+
+.frist-item::before {
+    content: counter(add-num);
+    position: absolute;
+    right: 40px;
+    color: white;
+    background: #d3603dcc;
+    width: 30px;
+    border-radius: 20px;
+}
+
+section {
+    text-align: center;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 90%;
+}
+
+.end-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.end-item span {
+    color: white;
+    position: absolute;
+    background: #d3603dcc;
+    width: 110px;
+    border-radius: 20px;
+    bottom: -35px;
+}
+
+.p-span-one {
+    right: 450px;
+}
+.p-span-two {
+    left: 120px;
+}
